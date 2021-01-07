@@ -15,14 +15,14 @@ import org.exemple.firstspring.dao.contracts.ContactDao;
 import org.exemple.firstspring.dao.contracts.PersonDao;
 import org.exemple.firstspring.entities.Contact;
 import org.exemple.firstspring.entities.Person;
-import org.springframework.stereotype.Component;
+//import org.springframework.stereotype.Component;
 
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-@Component
+//@Component
 public class AddressBook {
     private PersonDao personDao;
     private ContactDao contactsDao;

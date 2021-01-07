@@ -3,8 +3,8 @@ package org.exemple.firstspring;
 import org.exemple.firstspring.menu.menu_action.MenuAction;
 //import com.company.my_contacts.menu.menu_implementation.*;
 import org.exemple.firstspring.menu.menu_implementation.*;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+/*import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;*/
 
 import java.io.IOException;
 import java.io.PrintStream;
@@ -12,14 +12,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-@Component
+//@Component
 public class Menu {
     private AddressBook addressBook;
     private List<MenuAction> menuActions;
     private Scanner scanner;
     private PrintStream out;
 
-    @Autowired
+   // @Autowired
     public Menu(AddressBook addressBook) {
         this.addressBook = addressBook;
         this.menuActions = new ArrayList<>();
