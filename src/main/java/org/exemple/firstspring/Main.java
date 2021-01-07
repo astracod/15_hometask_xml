@@ -4,6 +4,7 @@ import org.exemple.firstspring.dao.contracts.ContactDao;
 import org.exemple.firstspring.dao.contracts.PersonDao;
 import org.exemple.firstspring.dao.implementation.ContactFileDao;
 import org.exemple.firstspring.dao.implementation.PersonFileDao;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -50,8 +51,8 @@ public class Main {
     */
 
 
-    final static String CONTACT_FILE_PATH = "C:/Users/Admin/Desktop/contacts.txt";
-    final static String PERSON_FILE_PATH = "C:/Users/Admin/Desktop/humans.txt";
+  /*  final static String CONTACT_FILE_PATH = "C:/Users/Admin/Desktop/contacts.txt";
+    final static String PERSON_FILE_PATH = "C:/Users/Admin/Desktop/humans.txt";*/
 
     public static void main(String[] args) throws IOException {
        /* ContactDao contactDao = new ContactFileDao(CONTACT_FILE_PATH);
