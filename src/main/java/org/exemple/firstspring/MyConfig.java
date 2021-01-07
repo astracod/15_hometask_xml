@@ -9,20 +9,20 @@ import org.springframework.context.annotation.Configuration;
 public class MyConfig {
 
 
-    private String contactPath = "C:/Users/Admin/Desktop/contacts.txt";
-    private String personPath = "C:/Users/Admin/Desktop/humans.txt";
+    private final static String CONTACT_PATH = "C:/Users/Admin/Desktop/contacts.txt";
+    private final static String PERSON_PATH = "C:/Users/Admin/Desktop/humans.txt";
 
 
     @Bean
     public ContactFileDao contactFileDao() {
-        ContactFileDao contactFileDao = new ContactFileDao(contactPath);
-        return contactFileDao;
+        return new ContactFileDao(CONTACT_PATH);
+
     }
 
     @Bean
     public PersonFileDao personFileDao() {
-        PersonFileDao personFileDao = new PersonFileDao(personPath);
-        return personFileDao;
+        return new PersonFileDao(PERSON_PATH);
+
     }
 
 }
