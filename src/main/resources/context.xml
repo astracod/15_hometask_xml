@@ -7,13 +7,6 @@
 
         <context:component-scan base-package="org.exemple.firstspring"/>
 
-   <!-- <bean class="org.exemple.firstspring.dao.implementation.ContactFileDao" id="contactDao">
-        <constructor-arg index="0" value="CONTACT_FILE_PATH"/>
-    </bean>-->
-
-   <!-- <bean class="org.exemple.firstspring.dao.implementation.PersonFileDao" id="personDao">
-        <constructor-arg index="0" value="PERSON_FILE_PATH"/>
-    </bean>-->
 
 
 </beans>
